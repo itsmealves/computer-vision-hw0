@@ -18,5 +18,5 @@ imwrite(uint8(fixedimg), "answer_1b.png");
 
 %%%%%% Your part (c) code here: apply the formula to increase contrast,
 % and display the image
-contrasted = uint8(2.0 * (fixedimg - 128) + 128);
-imwrite(contrasted, "answer_1c.png");
+contrasted = 2.0 * (fixedimg - 128) + 128;
+imwrite(uint8(contrasted), "answer_1c.png");
